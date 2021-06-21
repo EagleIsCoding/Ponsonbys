@@ -39,7 +39,6 @@ AddEventHandler('ClothesShop:addClothes', function(label, value,type)
 			end)
 			TriggerClientEvent('esx:showNotification', xPlayer.source, "~g~Tenue acheté")
 		else
-			societyAccount.addMoney(price)
 			TriggerClientEvent('esx:showNotification', xPlayer.source, "~r~La société n'a pas assez d'argent.")
 		end
 	end)
